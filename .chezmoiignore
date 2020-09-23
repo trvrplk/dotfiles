@@ -1,0 +1,3 @@
+{{ if ne .chezmoi.os "linux" }}
+  xfce4
+{{ end }}
