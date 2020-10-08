@@ -1,3 +1,7 @@
-{{ if ne .chezmoi.os "linux" }}
-  xfce4
+{{ if ne .chezmoi.os "linux" }}  
+xfce4
+{{ end }}
+
+{{ if ne .chezmoi.os "freebsd" }}  
+xfce4
 {{ end }}
