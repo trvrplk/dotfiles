@@ -2,11 +2,19 @@ shell:
   program: /usr/local/bin/fish
 
 font:
+<<<<<<< HEAD
 {{- if eq .chezmoi.hostname "Apples-MBP"}}
   size: 14.0
 {{- else }}
   size: 12.0
 {{- end }}
+=======
+  {{- if eq .chezmoi.hostname "Apples-MBP"}}
+  size: 14.0
+  {{- else }}
+  size: 12.0
+  {{- end }}
+>>>>>>> 43536dde8cb62d51be09b8fc79eba773b9a0be1d
  
   normal:
     family: Menlo for Powerline
