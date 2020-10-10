@@ -1,11 +1,17 @@
 shell:
+{{- if eq .chezmoi.os "darwn" }}
   program: /usr/local/bin/fish
+{{- else if eq .chezmoi.osRelease.name "Gentoo" }}
+  program: /bin/fish
+{{- else }}
+  program: /usr/bin/fish
+{{- end }}
 
 font:
 {{- if eq .chezmoi.hostname "Apples-MBP"}}
   size: 14.0
 {{- else }}
-  size: 12.0
+  size: 10.0
 {{- end }}
   
   normal:
