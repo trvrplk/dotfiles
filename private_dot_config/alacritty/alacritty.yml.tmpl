@@ -1,10 +1,10 @@
 shell:
 {{- if eq .chezmoi.os "darwin" }}
-  program: /usr/local/bin/fish
+program: /bin/zsh
 {{- else if eq .chezmoi.osRelease.name "Gentoo" }}
   program: /bin/fish
 {{- else }}
-  program: /usr/bin/fish
+  program: /usr/bin/zsh
 {{- end }}
 
 font:
