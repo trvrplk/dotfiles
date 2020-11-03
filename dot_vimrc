@@ -17,8 +17,8 @@ Plug 'morhetz/gruvbox'
 
 call plug#end()
 
-colorscheme jellybeans
-" set background=dark
+colorscheme gruvbox
+set background=dark
 
 set tabstop=2
 set shiftwidth=2
